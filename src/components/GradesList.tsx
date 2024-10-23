@@ -28,14 +28,14 @@ export default function GradesList({
   return (
     <div className="space-y-4">
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-bold text-gray-900">Grades</h2>
+        <h2 className="text-2xl font-bold text-gray-900">Ramos</h2>
         {canCreate && (
           <button
             onClick={onAdd}
             className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700"
           >
             <PlusCircle className="h-4 w-4 mr-2" />
-            Add Grade
+            Añadir ramo
           </button>
         )}
       </div>
@@ -44,19 +44,19 @@ export default function GradesList({
           <thead className="bg-gray-50">
             <tr>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Course
+                Ramo
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Score
+                Puntaje (%)
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Feedback
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Date
+                Fecha
               </th>
               <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Actions
+                Acciones
               </th>
             </tr>
           </thead>
@@ -111,7 +111,7 @@ export default function GradesList({
             {grades.length === 0 && (
               <tr>
                 <td colSpan={5} className="px-6 py-4 text-center text-sm text-gray-500">
-                  No grades found
+                  No se encontraron ramos
                 </td>
               </tr>
             )}

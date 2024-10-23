@@ -59,7 +59,7 @@ export default function GradeEditor({ grade, courses, onSave, onClose }: GradeEd
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
               required
             >
-              <option value="">Select a course</option>
+              <option value="">Selecciona un curso</option>
               {courses.map((course) => (
                 <option key={course.id} value={course.id}>
                   {course.name}

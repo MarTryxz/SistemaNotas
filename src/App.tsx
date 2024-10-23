@@ -7,9 +7,9 @@ import { Grade, Course } from './types';
 import { LogOut, GraduationCap } from 'lucide-react';
 
 const DEMO_COURSES: Course[] = [
-  { id: '1', name: 'Mathematics 101', teacherId: '2', semester: 'Fall', year: 2024 },
-  { id: '2', name: 'Physics 101', teacherId: '2', semester: 'Fall', year: 2024 },
-  { id: '3', name: 'Computer Science 101', teacherId: '2', semester: 'Fall', year: 2024 },
+  { id: '1', name: 'Matematicas 101', teacherId: '2', semester: 'Fall', year: 2024 },
+  { id: '2', name: 'Fisica 101', teacherId: '2', semester: 'Fall', year: 2024 },
+  { id: '3', name: 'Ciencia computacional 101', teacherId: '2', semester: 'Fall', year: 2024 },
 ];
 
 const DEMO_GRADES: Grade[] = [
@@ -18,7 +18,7 @@ const DEMO_GRADES: Grade[] = [
     studentId: '3',
     courseId: '1',
     score: 85,
-    feedback: 'Good work on derivatives!',
+    feedback: 'Buen desempeño con derivadas!',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   },
@@ -67,7 +67,7 @@ function Dashboard() {
   };
 
   const handleDeleteGrade = (gradeId: string) => {
-    if (confirm('Are you sure you want to delete this grade?')) {
+    if (confirm('Estas seguro de borrar este grado?')) {
       setGrades(grades.filter(g => g.id !== gradeId));
     }
   };
@@ -80,9 +80,9 @@ function Dashboard() {
             <div className="flex items-center">
               <GraduationCap className="h-8 w-8 text-blue-600 mr-3" />
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">Academic Grading System</h1>
+                <h1 className="text-2xl font-bold text-gray-900">Sistema de calificaciones academico</h1>
                 <p className="text-sm text-gray-500">
-                  Logged in as {user?.name} ({user?.role})
+                  sesion iniciada como {user?.name} ({user?.role})
                 </p>
               </div>
             </div>
@@ -91,7 +91,7 @@ function Dashboard() {
               className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-600 hover:bg-gray-700"
             >
               <LogOut className="h-4 w-4 mr-2" />
-              Logout
+              Cerrar sesion
             </button>
           </div>
         </div>

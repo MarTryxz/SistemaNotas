@@ -13,7 +13,7 @@ export default function Login() {
     try {
       login(email, password);
     } catch (err) {
-      setError('Invalid credentials');
+      setError('Credenciales invalidas');
     }
   };
 
@@ -25,10 +25,10 @@ export default function Login() {
             <GraduationCap className="h-8 w-8 text-blue-600" />
           </div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Academic Grading System
+          Sistema de calificaciones academico
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
-            Demo accounts: admin@example.com, teacher@example.com, student@example.com
+            Cuentas demo: admin@example.com, teacher@example.com, student@example.com
           </p>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
@@ -43,7 +43,7 @@ export default function Login() {
                 type="email"
                 required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
-                placeholder="Email address"
+                placeholder="direccion de correo"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -53,7 +53,7 @@ export default function Login() {
                 type="password"
                 required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
-                placeholder="Password (any value)"
+                placeholder="contraseña (cualquier valor)"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -67,7 +67,7 @@ export default function Login() {
               <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                 <LogIn className="h-5 w-5 text-blue-500 group-hover:text-blue-400" />
               </span>
-              Sign in
+              Iniciar sesion
             </button>
           </div>
         </form>

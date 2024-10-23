@@ -10,8 +10,8 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | null>(null);
 
 const DEMO_USERS: User[] = [
-  { id: '1', name: 'Admin User', email: 'admin@example.com', role: 'admin' },
-  { id: '2', name: 'Prof. Smith', email: 'teacher@example.com', role: 'teacher' },
+  { id: '1', name: 'Administrador', email: 'admin@example.com', role: 'admin' },
+  { id: '2', name: 'Prof. Perez', email: 'teacher@example.com', role: 'teacher' },
   { id: '3', name: 'John Doe', email: 'student@example.com', role: 'student' },
 ];
 
