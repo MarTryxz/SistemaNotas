@@ -39,7 +39,7 @@ Un sistema de gestión académica moderno y completo para instituciones educativ
 
 1. **Clonar el repositorio**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/MarTryxz/SistemaNotas.git
    cd sistema-academico
    ```
 
