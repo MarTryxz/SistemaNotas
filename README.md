@@ -154,10 +154,6 @@ La interfaz se adapta perfectamente a diferentes dispositivos:
 - Tablet
 - Móvil
 
-## 🤝 Contribuir
-
-Las contribuciones son bienvenidas. Por favor, lee las guías de contribución antes de enviar un pull request.
-
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
